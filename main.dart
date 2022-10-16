@@ -1,9 +1,15 @@
+import 'dart:io';
+
 void main() {
   print("List / Array");
   List mylist = [11, 22, 33, 44, 55, 66, 77, 88, 99, 100];
   print(mylist);
 
-  print("Is Empty: ${mylist.isEmpty}");
+  mylist.replaceRange(3, 7, [0, 7, 4, 2]);
+  print(mylist);
+  
+
+  /* print("Is Empty: ${mylist.isEmpty}");
 
   print("List Length: ${mylist.length}");
 
@@ -21,6 +27,5 @@ void main() {
 
   print(mylist.sublist(1, 2));
 
-  print(mylist.length);
-  
+  print(mylist.length);*/
 }
